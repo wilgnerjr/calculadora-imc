@@ -1,74 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- IMPORTAÇÕES DE ICONES E FONTES -->
-        <!-- FONTE POPPINS -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-        <!-- ICONES FONTWAESOME -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-     
-    <!-- IMPORTAÇÃO DE FOLHAS CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- ICONE DA BARRA DE NAVEGAÇÃO -->
     <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/png">
 
-    <!-- TITULO DA ABA DE NAVEGAÇÃO -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ICONS FONTWAESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Calculadora - IMC</title>
 </head>
 <body>
-    
-    <!-- Escrevendo Conteúdo Principal -->
     <main id="container">
         <section id="img">
-            <img src="assets/imgs/ilustracao.svg" alt="Imagem de dois avatares se exercitando">
+            <img src="assets/imgs/ilustracao.svg" alt="Dois avatares se exercitando">
         </section>
 
         <section id="calculator">
             <form id="form">
-                <h1 id="title">Calculadora - IMC</h1>
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
 
                 <div class="input-box">
                     <label for="weight">
                         Peso em Kg
                     </label>
-
                     <div class="input-field">
                         <i class="fa-solid fa-weight-hanging"></i>
-
-                        <input type="number" id="weight" required>
-
+                        <input type="number" id="weight" required name="weight">
                         <span>Kg</span>
-
                     </div>
-
                 </div>
 
                 <div class="input-box">
                     <label for="height">
-                        Altura em metros
+                        Altura em Metros
                     </label>
-
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
-
-                        <input type="number" id="height" required>
-
+                        <input type="number" step="0.01" id="height" required name="height">
                         <span>m</span>
-
                     </div>
-
                 </div>
 
-                <button id="calculate">
-                    Calcular
-                </button>
+                <button id="calculate"> Calcular </button>
 
             </form>
 
@@ -78,31 +57,20 @@
                         <span id="value"></span>
                         <span>Seu IMC</span>
                     </div>
-
                     <div id="description">
                         <span></span>
                     </div>
-
                 </div>
                 <div id="more-info">
-                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm" target="_blank">
+                    <a href="https://mundoeducacao.uol.com.br/sauyde-bem-estar/imc.htm" target="_blank">
                         Mais informações sobre o IMC
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
-
             </div>
-
         </section>
-
     </main>
 
-    <!-- Escrevendo Rodapé -->
-    <footer>
-    </footer>
-
-    <!-- Importação Javascript -->
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>
